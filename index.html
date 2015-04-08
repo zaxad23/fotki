@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fotki!</title>
+  <link rel="stylesheet" href="semantic-ui/icon.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="titlebar">
+    <b>Fotki!</b>
+    <i class="info icon circled" style="height:15px !important;width:20px !important; padding:5px 2px 3px 2px !important;float:right;margin: 0px 40px 0px 0px !important" onclick="informuje()" title="Informacje o Fotkach."></i>
+  </div>
+  <div id="infoofotkach">
+    <h3 class="innercircle"><center>Fotki! 3.0</center></h3>
+    <br>
+    Fotki! to stronka do robienia i edytowania zdjęć z kamerki internetowej.
+    Prosto. Szybko. Łatwo!
+    <br><br>
+    <span class="innercircle" style="padding: 7px 15px 7px 0px !important;" title="TAK, ja tą stronkę zrobiłem..."><i class="large nowstep code icon" style="padding: 15px 13px; margin-left:-1px;"><i></i></i> 
+    <span style="padding-left: 5px;">Adam "Skorupa" Skorupski</span></span>
+    <br><br>
+    <span class="innercircle" style="padding: 7px 15px 7px 0px !important;" title="Super paczka ikonek - Semantic UI."><i class="large nowstep pointing right icon" style="padding: 15px 13px; margin-left:-1px;"><i></i></i> 
+    <span style="padding-left: 5px;">Ikonki: <a href="http://semantic-ui.com/elements/icon.html#/icons" target="_blank">Semantic UI</a></span></span>
+    <br><br>
+    <a href="https://www.facebook.com/groups/1611594229062578/" target="_blank">
+    <i class="circled icon large facebook square link" style="margin-left:5px !important;margin-top: 5px !important;" title="Dołącz do grupy na FB!"></i>
+    </a>
+    <a href="https://googledrive.com/host/0B4fCpZ7fiqZ7ZHZhT3VTWXhOSFU/fotki" title="Kliknij, aby otworzyć w nowej karcie wersję bez reklamy." target="_blank">
+    <i class="circled icon large file outline code link" style="margin-left:16px !important;margin-top: 5px !important;"></i>
+    </a>
+    <br>
+    <br>
+  </div>
+  <center>
+  <div id="in">
+  <span id="g">
+    <div id="h">
+    </div>
+    
+  </span>
+  <span id="e">
+    <div></div>
+    <span id="d">
+    </span>
+    
+    <table>
+      <tr>
+        <td style="background-color: black;"><div class="tdb"></div></td>
+          <td style="background-color: red;"><div class="tdb"></div></td>
+       <td style="background-color: orange;"><div class="tdb"></div></td>
+        <td style="background-color: green;"><div class="tdb"></div></td>
+         <td style="background-color: blue;"><div class="tdb"></div></td>
+       <td style="background-color: yellow;"><div class="tdb"></div></td>
+   <td style="background-color: blueviolet;"><div class="tdb"></div></td>
+        <td style="background-color: brown;"><div class="tdb"></div></td>
+        <td style="background-color: white;"><div class="tdb"></div></td>
+      </tr>
+    </table>
+    <div>
+    
+    </div>
+    </span>
+  <div id="c">
+    
+  <div>
+    <video id="video" width="auto" height="auto" style="border: 2px solid black" title="Kliknij, aby zrobić natychmiast zdjęcie."></video>
+  
+  </div>
+  </div>
+  <div id="koncowka"></div>
+  </center>
+  
+  <div id="steps">
+    <span class="innercircle" id="steper" style="padding: 7px 15px 7px 0px !important;"><span class="nowstep"><b id="ins">1</b></span> <span id="nowstepinfo" style="padding-left: 5px;">Zrób zdjęcie.</span></span>
+    
+    <span id="przyciski" style="float:right;margin-right:10px;">
+      <span id="gz1">
+        <i class="refresh large icon circled link" onclick="doit()" id="reset" title="Kliknij, aby dostać dostęp do kamerki."></i>
+        <i class="camera large icon circled link" id="a" style="display:none;margin-top:-11px !important;" title="Zrób zdjęcie!"></i>
+      </span>
+      <span id="gz2" style="display:none;">
+        <i class="checkmark large icon circled odstep link" id="f" title="Gotowe!"></i>  
+        <i class="remove large icon circled link" id="j" title="Wróć do robienia zdjęcia."></i>
+      </span>
+      <span id="gz3" style="display:none;">
+        <a id="pobierz" style="margin-right:26px;" title="Pobierz fotkę.">
+          <i class="download large icon circled link"></i>
+        </a>
+        <i class="repeat large icon circled link" id="i" title="Zrób kolejną fotkę."></i>
+      </span>
+    </span>
+    
+  </div>
+<script type="text/javascript" src="engine.js"></script>
+</body>
+</html>
