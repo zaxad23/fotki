@@ -1,2 +1,5 @@
 # fotki
-Aplikacja HTML5 robiąca zdjęcia z kamerki komputera. / An HTML5 app making a photos from a webcam. / gdriv.es/skorupa/fotki
+Aplikacja HTML5 robiąca zdjęcia z kamerki komputera.
+English: An HTML5 app making a photos from a webcam. 
+
+http://gdriv.es/skorupa/fotki
