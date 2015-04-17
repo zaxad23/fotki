@@ -147,7 +147,7 @@ function convert(){
   napiszrodlo = new Image();
   napiszrodlo.src = "zrodlo.png";
   napiszrodlo.onload = function () {
-      ctx.drawImage(napiszrodlo,hzdj-40,wzdj-200);
+      ctx.drawImage(napiszrodlo,hzdj-30,wzdj-260);
       
       gz2.style.display = "none";
       gz3.style.display = "block";
