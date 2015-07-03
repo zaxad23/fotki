@@ -4,14 +4,11 @@
   <title>:: Fotki! :: tworzenie zdjęć w nowym stylu ::</title>
   
   <!--  CSS  -->
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.0/components/icon.min.css"/>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.0/components/button.min.css"/>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.0/components/reset.min.css"/>
+  <link rel="stylesheet" href="semantic-ui/icon.min.css"/>
+  <link rel="stylesheet" href="semantic-ui/button.min.css"/>
+  <link rel="stylesheet" href="semantic-ui/reset.min.css"/>
   
   <link rel="stylesheet" href="css/styles.css"/>
-  
-  <!--  jQuery UI CSS  -->
-  <link rel="stylesheet" href="jquery/jquery-ui.min.css"/>
   
   <!--  FAVICON  -->
   <link rel="icon" href="http://zaxad23.github.io/img/logo_32x32.png"/>
@@ -22,14 +19,22 @@
   <meta name="Description" content="Webcam+ to darmowy sposób na nowoczesne zdjęcia. Stworzony z myślą o nowych technologiach HTML5, dzięki czemu może być uruchomiony na dowolnej platformie i każdej nowoczesnej przeglądarce bez technologii Flash i Java!"/>
   
   <!--  jQuery  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="jquery/jquery.min.js"></script>
   <script src="jquery/jquery-ui.min.js" type="text/javascript"></script>
   
   <!--  JS  -->
   <script src="js/engine.js"></script>
   <script src="js/setup.js"></script>
+  
+  <!--[if lte IE 8]>
+  <script type="text/javascript">
+  window.location.href="http://browsehappy.com";
+  </script>
+  <![endif]-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body>  
   <!--  ============ MENU =============  -->
   <div id="superbar" style="height: 768px;">
     <i id="menuclick" class="icon justify align huge white clickable"></i>
@@ -69,11 +74,12 @@
           <option value="red">Czerwony</option>
           <option value="pink">Różowy</option>
         </select>
+        
         <br/>
         <br/>
         <br/>
         
-       <div class="center" style="margin-left: auto; margin-right: auto; width: 250px;">
+         <div class="center" style="margin-left: auto; margin-right: auto; width: 250px;">
           <div class="ui button positive icon circular" style="display:inline-block;" onclick="convert()">
             <i class="icon checkmark"></i>
           </div>
@@ -86,7 +92,10 @@
       
     </div>
     <div id="info">
-      <p>Wspierany przez Adama Skorupskiego i innych.</p>
+      <p>
+        Ostatnia aktualizacja: <span id="update"></span>
+        Wspierany przez Adama Skorupskiego i innych.
+      </p>
       <a href="https://github.com/zaxad23/webcamplus" target="_blank">
         <i class="icon circular github link purple inverted"></i>
       </a>
@@ -145,6 +154,7 @@
         <h1>Teraz je edytuj.</h1>
         <canvas id="canvas"></canvas>
       </div>
+      <div id="watermarkCount"></div>
     </div>
     <!--  KONIEC  -->
     <div id="screen6" class="screen" style="display:none;">
